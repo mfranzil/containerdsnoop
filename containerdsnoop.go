@@ -310,7 +310,7 @@ func run(channel chan []byte, completeContent bool) {
 				}
 
 				if _, ok := serviceMsgs[path]; !ok {
-					log.Printf("missing service for path: %s\n", path)
+					// log.Printf("missing service for path: %s\n", path)
 					break
 				}
 
