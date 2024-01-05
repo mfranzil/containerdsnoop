@@ -1,5 +1,5 @@
 .vagrant/
 *.log
-dockersnoop
+containerdsnoop
 main
 .idea
