@@ -10,7 +10,7 @@ This program was originally written by [stwind](https://github.com/stwind) as [d
   - [Running](#running)
   - [License](#license)
   - [Contributing](#contributing)
-  - [Authors](#authors)
+  - [Acknowledgements](#acknowledgements)
 
 ## Requirements
 
@@ -103,13 +103,23 @@ By deploying a pod on the node, we can see the API calls to `containerd`:
 
 ## License
 
-This software is licensed under the Apache 2.0 license. See [LICENSE](LICENSE) for more details.
+This software, with respect to the [Linux eBPF licensing](https://docs.kernel.org/bpf/bpf_licensing.html), is
+licensed under the GPL License 2.0. See the [LICENSE](LICENSE) file for more details.
 
 ## Contributing
 
 All contributions are welcome. If you have any doubts or questions feel free to open an issue or contact the maintainers.
 
-## Authors
+## Acknowledgements
+
+This work was partially supported by project SERICS (PE00000014), MUR National Recovery and Resilience Plan funded by the European Union - NextGenerationEU, and by project FLUIDOS (grant agreement No 101070473), European Union’s Horizon Europe Programme.
+
+The author list is the following:
 
 - [Luis Augusto Dias Knob](https://github.com/luisdknob), Fondazione Bruno Kessler - `l.diasknob@fbk.eu`
 - [Matteo Franzil](https://github.com/mfranzil), Fondazione Bruno Kessler - `mfranzil@fbk.eu`
+- Domenico Siracusa, Fondazione Bruno Kessler - `dsiracusa@fbk.eu`
+
+If you wish to cite this work for scientific research, do it as follows:
+
+> L. A. D. Knob, M. Franzil, and D. Siracusa, “Exploiting Kubernetes’ Image Pull Implementation to Deny Node Availability.” arXiv. Preprint available: http://arxiv.org/abs/2401.10582. [Accessed: Jan. 23, 2024]
