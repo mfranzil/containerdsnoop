@@ -4,6 +4,14 @@ Intercept gRPC traffic to [containerd](https://github.com/containerd/containerd)
 
 This program was originally written by [stwind](https://github.com/stwind) as [dockersnoop](https://github.com/stwind/dockersnoop). It was inspired [bcc](https://github.com/iovisor/bcc/)-based tools such as `xxxsnoop`, [sockdump](https://github.com/mechpen/sockdump), [grpc-snoop](https://github.com/nrc/grpc-snoop). This program is part of the *Exploiting Kubernetes' Image Pull Implementation to Deny Node Availability* research effort, whose code is available [here](https://github.com/risingfbk/magi).
 
+- [containerdsnoop](#containerdsnoop)
+  - [Requirements](#requirements)
+  - [Setup](#setup)
+  - [Running](#running)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Authors](#authors)
+
 ## Requirements
 
 Tested with
