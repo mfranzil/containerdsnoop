@@ -2,15 +2,15 @@
 
 Intercept gRPC traffic to [containerd](https://github.com/containerd/containerd) by passively captureing `AF_UNIX` packets with eBPF.
 
-This program was originally written by [stwind](https://github.com/stwind) as [dockersnoop](https://github.com/stwind/dockersnoop). It was inspired [bcc](https://github.com/iovisor/bcc/)-based tools such as `xxxsnoop`, [sockdump](https://github.com/mechpen/sockdump), [grpc-snoop](https://github.com/nrc/grpc-snoop).
+This program was originally written by [stwind](https://github.com/stwind) as [dockersnoop](https://github.com/stwind/dockersnoop). It was inspired [bcc](https://github.com/iovisor/bcc/)-based tools such as `xxxsnoop`, [sockdump](https://github.com/mechpen/sockdump), [grpc-snoop](https://github.com/nrc/grpc-snoop). This program is part of the *Exploiting Kubernetes' Image Pull Implementation to Deny Node Availability* research effort, whose code is available [here](https://github.com/risingfbk/magi).
 
 ## Requirements
 
 Tested with
 
-* `Ubuntu==22.04`
-* `containerd==1.7.1`
-* `bcc==0.24.0`
+- `Ubuntu==22.04`
+- `containerd==1.7.1`
+- `bcc==0.24.0`
 
 Kubernetes `v1.27.1` was used to deploy the pod, although as long as the `containerd` version is the same, it should work with other versions.
 
@@ -92,3 +92,16 @@ By deploying a pod on the node, we can see the API calls to `containerd`:
 12:46:13.958560 containerd     3135695 3135704 1732336 RESP   5      /runtime.v1.ImageService/ImageStatus                    "&ImageStatusResponse{Image:nil,Info:map[string]string{},}"
 12:46:13.959852 kubelet        1732336 1736005 3135695 REQ    7      /runtime.v1.ImageService/PullImage                      "&PullImageRequest{Image:&ImageSpec{Image:registry-10-231-0-208.nip.io/mfranzil/5gb:1,Annotations:ma
 ```
+
+## License
+
+This software is licensed under the Apache 2.0 license. See [LICENSE](LICENSE) for more details.
+
+## Contributing
+
+All contributions are welcome. If you have any doubts or questions feel free to open an issue or contact the maintainers.
+
+## Authors
+
+- [Luis Augusto Dias Knob](https://github.com/luisdknob), Fondazione Bruno Kessler - `l.diasknob@fbk.eu`
+- [Matteo Franzil](https://github.com/mfranzil), Fondazione Bruno Kessler - `mfranzil@fbk.eu`
